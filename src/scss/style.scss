@@ -97,7 +97,7 @@ $primary: #003764;
 $secondary: #0e57a1;
 
 body {
-	font-family: "Signika Negative", sans-serif;
+	font-family: "SignikaNegative", sans-serif;
 }
 
 .container {
@@ -107,18 +107,230 @@ body {
 	margin: 0 auto;
 }
 
+/* --- Header ---  */
 .header {
 	&__inner {
 		display: flex;
 		justify-content: space-between;
+		align-items: center;
+		padding: 65px 0 24px 0;
 	}
 }
-
+/* --- Menu ---  */
 .menu {
 	&__list {
 		display: flex;
 	}
 	&__item + &__item {
-		padding-left: 20px;
+		padding-left: 60px;
 	}
+	&__link {
+		color: $primary;
+		position: relative;
+		transition: all 0.5s linear 0s;
+	}
+	&__link.active {
+		transition: all 0.5s linear 0s;
+		color: $secondary;
+	}
+	&__link.active::after {
+		content: "";
+		display: block;
+		width: 120px;
+		height: 12px;
+		background-color: $secondary;
+		position: absolute;
+		top: -60px;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	&__link:hover::after {
+		content: "";
+		display: block;
+		width: 120px;
+		height: 12px;
+		background-color: $secondary;
+		position: absolute;
+		top: -60px;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+}
+
+.summerapp {
+	background-color: #054f9c;
+	&__wrapper {
+		background-image: url(../img/phone.png);
+		background-repeat: no-repeat;
+		background-position: bottom right;
+		min-height: 492px;
+	}
+	&__inner {
+		color: #fff;
+	}
+	&__title {
+		font-size: 22px;
+		line-height: 1.2;
+		font-weight: 600;
+		text-transform: uppercase;
+		max-width: 400px;
+		margin-bottom: 20px;
+	}
+	&__subtitle {
+		font-size: 14px;
+		font-weight: 400;
+		max-width: 401px;
+		margin-bottom: 27px;
+	}
+}
+.showcase__subtitle {
+	font-size: 14px;
+	line-height: 1.2;
+	font-weight: 400;
+	color: #ffffff;
+	margin-bottom: 25px;
+}
+.summerapp-btn {
+	font-size: 14px;
+	line-height: 12px;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: #ffffff;
+	padding: 14px 16px;
+}
+
+.summerapp-btn:nth-child(1) {
+	background-color: #6b9c0b;
+	border: 1px solid #12161d;
+}
+
+.summerapp-btn:nth-child(2) {
+	background-color: #b55926;
+	border: 1px solid #12161d;
+}
+
+/* --- Social ---  */
+
+.social {
+	margin-bottom: 54px;
+	&__items {
+		display: flex;
+	}
+	&__item {
+		width: 53px;
+		height: 45px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: #21588d;
+		transition: all 0.5s linear 0s;
+	}
+	&__item:hover {
+		background-color: #8eb61c;
+	}
+	&__item + &__item {
+		padding-left: 1px;
+	}
+	&__link {
+	}
+	&__img {
+		width: 100%;
+		height: 100%;
+	}
+}
+
+/* --- Showcase ---  */
+.showcase {
+	display: flex;
+	align-items: center;
+	&__video {
+		width: 138px;
+		height: 91px;
+		background-color: #ffffff;
+		border: 3px solid #002c58;
+		margin-right: 23px;
+		position: relative;
+		margin-bottom: 30px;
+	}
+	&__video::after {
+		content: "";
+		border: 20px solid transparent;
+		border-left: 35px solid red;
+		position: absolute;
+		top: 50%;
+		left: 60%;
+		transform: translate(-50%, -50%);
+	}
+
+	&__title {
+		font-family: "TektonProCond", sans-serif;
+		font-size: 21px;
+		line-height: 1.2;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+}
+
+/* --- Feature ---  */
+.feature__title-box {
+	display: flex;
+}
+
+.feature__title {
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: #093059;
+	margin: 0 14px;
+}
+.border-left {
+	border: 1px solid #000000;
+	border-style: none none dashed;
+	max-width: 100%;
+	width: 42.7%;
+	margin-bottom: 7.5px;
+}
+
+.border-right {
+	border: 1px solid #000000;
+	border-style: none none dashed;
+	max-width: 100%;
+	width: 42.7%;
+	margin-bottom: 7.5px;
+}
+
+.modal-back {
+	background-color: rgba(0, 0, 0, 0.5);
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+.modal-content {
+	width: 700px;
+	height: 500px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.modal-video {
+	width: 100%;
+	height: 100%;
+}
+
+.close {
+	color: white;
+	font-size: 32px;
+	font-family: sans-serif;
+	position: absolute;
+	top: 30%;
+	right: 100px;
 }

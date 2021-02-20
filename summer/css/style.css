@@ -89,7 +89,7 @@ h6 {
 }
 
 @font-face {
-  font-family: "SignikaNegative-Regular";
+  font-family: "SignikaNegative";
   font-display: swap;
   src: url("../fonts/SignikaNegative-Regular.woff") format("woff"), url("../fonts/SignikaNegative-Regular.woff2") format("woff2"), url("../fonts/SignikaNegative-Regular.ttf") format("truetype");
   font-weight: 400;
@@ -97,7 +97,7 @@ h6 {
 }
 
 @font-face {
-  font-family: "SignikaNegative-SemiBold";
+  font-family: "SignikaNegative";
   font-display: swap;
   src: url("../fonts/SignikaNegative-SemiBold.woff") format("woff"), url("../fonts/SignikaNegative-SemiBold.woff2") format("woff2"), url("../fonts/SignikaNegative-SemiBold.ttf") format("truetype");
   font-weight: 600;
@@ -105,16 +105,24 @@ h6 {
 }
 
 @font-face {
-  font-family: "SignikaNegative-Bold";
+  font-family: "SignikaNegative";
   font-display: swap;
   src: url("../fonts/SignikaNegative-Bold.woff") format("woff"), url("../fonts/SignikaNegative-Bold.woff2") format("woff2"), url("../fonts/SignikaNegative-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
 
+@font-face {
+  font-family: "TektonProCond";
+  font-display: swap;
+  src: url("../fonts/TektonProCond-Bold.woff") format("woff"), url("../fonts/TektonProCond-Bold.woff2") format("woff2"), url("../fonts/TektonProCond-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
 /* !----- Переменные -----! */
 body {
-  font-family: "Signika Negative", sans-serif;
+  font-family: "SignikaNegative", sans-serif;
 }
 
 .container {
@@ -124,15 +132,243 @@ body {
   margin: 0 auto;
 }
 
+/* --- Header ---  */
 .header__inner {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 65px 0 24px 0;
 }
 
+/* --- Menu ---  */
 .menu__list {
   display: flex;
 }
 
 .menu__item + .menu__item {
-  padding-left: 20px;
+  padding-left: 60px;
+}
+
+.menu__link {
+  color: #003764;
+  position: relative;
+  transition: all 0.5s linear 0s;
+}
+
+.menu__link.active {
+  transition: all 0.5s linear 0s;
+  color: #0e57a1;
+}
+
+.menu__link.active::after {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 12px;
+  background-color: #0e57a1;
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.menu__link:hover::after {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 12px;
+  background-color: #0e57a1;
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.summerapp {
+  background-color: #054f9c;
+}
+
+.summerapp__wrapper {
+  background-image: url(../img/phone.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  min-height: 492px;
+}
+
+.summerapp__inner {
+  color: #fff;
+}
+
+.summerapp__title {
+  font-size: 22px;
+  line-height: 1.2;
+  font-weight: 600;
+  text-transform: uppercase;
+  max-width: 400px;
+  margin-bottom: 20px;
+}
+
+.summerapp__subtitle {
+  font-size: 14px;
+  font-weight: 400;
+  max-width: 401px;
+  margin-bottom: 27px;
+}
+
+.showcase__subtitle {
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #ffffff;
+  margin-bottom: 25px;
+}
+
+.summerapp-btn {
+  font-size: 14px;
+  line-height: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 14px 16px;
+}
+
+.summerapp-btn:nth-child(1) {
+  background-color: #6b9c0b;
+  border: 1px solid #12161d;
+}
+
+.summerapp-btn:nth-child(2) {
+  background-color: #b55926;
+  border: 1px solid #12161d;
+}
+
+/* --- Social ---  */
+.social {
+  margin-bottom: 54px;
+}
+
+.social__items {
+  display: flex;
+}
+
+.social__item {
+  width: 53px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #21588d;
+  transition: all 0.5s linear 0s;
+}
+
+.social__item:hover {
+  background-color: #8eb61c;
+}
+
+.social__item + .social__item {
+  padding-left: 1px;
+}
+
+.social__img {
+  width: 100%;
+  height: 100%;
+}
+
+/* --- Showcase ---  */
+.showcase {
+  display: flex;
+  align-items: center;
+}
+
+.showcase__video {
+  width: 138px;
+  height: 91px;
+  background-color: #ffffff;
+  border: 3px solid #002c58;
+  margin-right: 23px;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.showcase__video::after {
+  content: "";
+  border: 20px solid transparent;
+  border-left: 35px solid red;
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+}
+
+.showcase__title {
+  font-family: "TektonProCond", sans-serif;
+  font-size: 21px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* --- Feature ---  */
+.feature__title-box {
+  display: flex;
+}
+
+.feature__title {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #093059;
+  margin: 0 14px;
+}
+
+.border-left {
+  border: 1px solid #000000;
+  border-style: none none dashed;
+  max-width: 100%;
+  width: 42.7%;
+  margin-bottom: 7.5px;
+}
+
+.border-right {
+  border: 1px solid #000000;
+  border-style: none none dashed;
+  max-width: 100%;
+  width: 42.7%;
+  margin-bottom: 7.5px;
+}
+
+.modal-back {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.modal-content {
+  width: 700px;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-video {
+  width: 100%;
+  height: 100%;
+}
+
+.close {
+  color: white;
+  font-size: 32px;
+  font-family: sans-serif;
+  position: absolute;
+  top: 30%;
+  right: 100px;
 }
