@@ -18,7 +18,7 @@
 						<img class="logo" src="img/logo.png" alt="Logo">
 					</a>
 				</div>
-				<nav class="menu">
+				<nav class="menu" id="nav-menu">
 					<ul class="menu__list">
 						<li class="menu__item">
 							<a class="menu__link active" href="#">Home page</a>
@@ -36,6 +36,9 @@
 							<a class="menu__link" href="#">contact</a>
 						</li>
 					</ul>
+					<div class="nav__toggle" id="nav-toggle">
+						<span></span>
+					</div>
 				</nav>
 			</div>
 		</div>
@@ -119,12 +122,268 @@
 					<h2 class="feature__title">Best features</h2>
 					<div class="border-right"></div>
 				</div>
+				<div class="feature__items">
+					<div class="feature__item">
+						<div class="feature__photo">
+							<img class="feature__img" src="img/features/time.png" alt="">
+							<div class="feature__subtitle">Time changer</div>
+						</div>
+						<div class="feature__text">
+							<p>Sed posuere consectetur est at lobortis. Praesent comm odo cursus magna, vel scele</p>
+						</div>
+						<div class="feature__more">
+							<a class="feature__link" href="#">More info</a>
+						</div>
+					</div>
+					<div class="feature__item">
+						<div class="feature__photo">
+							<img class="feature__img" src="img/features/platforms.png" alt="">
+							<div class="feature__subtitle">All platforms</div>
+						</div>
+						<div class="feature__text">
+							<p>Sed posuere consectetur est at lobortis. Praesent comm odo cursus magna, vel scele</p>
+						</div>
+						<div class="feature__more">
+							<a class="feature__link" href="#">More info</a>
+						</div>
+					</div>
+					<div class="feature__item">
+						<div class="feature__photo">
+							<img class="feature__img" src="img/features/social.png" alt="">
+							<div class="feature__subtitle">Social integration</div>
+						</div>
+						<div class="feature__text">
+							<p>Sed posuere consectetur est at lobortis. Praesent comm odo cursus magna, vel scele </p>
+						</div>
+						<div class="feature__more">
+							<a class="feature__link" href="#">More info</a>
+						</div>
+					</div>
+					<div class="feature__item">
+						<div class="feature__photo">
+							<img class="feature__img" src="img/features/browser.png" alt="">
+							<div class="feature__subtitle">Browser ready</div>
+						</div>
+						<div class="feature__text">
+							<p>Sed posuere consectetur est at lobortis. Praesent comm odo cursus magna, vel scele </p>
+						</div>
+						<div class="feature__more">
+							<a class="feature__link" href="#">More info</a>
+						</div>
+					</div>
+					<div class="feature__item">
+						<div class="feature__photo">
+							<img class="feature__img" src="img/features/protection.png" alt="">
+							<div class="feature__subtitle">Best protection</div>
+						</div>
+						<div class="feature__text">
+							<p>Sed posuere consectetur est at lobortis. Praesent comm odo cursus magna, vel scele</p>
+						</div>
+						<div class="feature__more">
+							<a class="feature__link" href="#">More info</a>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
 
+	<section class="showcase-news">
+		<div class="container">
+			<div class="showcase-news-border">
+				<div class="showcase-news-left"></div>
+				<div class="showcase-news__title">Showcase</div>
+				<div class="showcase-news-left"></div>
+				<div class="showcase-news-right"></div>
+				<div class="showcase-news__title">News</div>
+				<div class="showcase-news-right"></div>
+			</div>
+			<div class="showcase-news__inner">
+				<div class="showcase-news__squares">
+					<div class="showcase-news__square">
+						<div class="square">1</div>
+					</div>
+					<div class="showcase-news__square">
+						<div class="square">2</div>
+					</div>
+					<div class="showcase-news__square">
+						<div class="square">3</div>
+					</div>
+					<div class="showcase-news__square">
+						<div class="square">4</div>
+					</div>
+				</div>
+				<div class="showcase__news">
+					<div class="showcase__date">
+						<div class="showcase__data"><span>22</span>
+							december
+							2013</div>
+						<div class="showcase__data"><span>22</span>
+							december
+							2013</div>
+						<div class="showcase__data"><span>22</span>
+							december
+							2013</div>
+					</div>
+					<div class="showcase-news__items">
+						<div class="showcase-news__item">
+							<div class="showcase__item-box">
+								<p><span>Vestibulum id ligula porta felis euismod</span> semper. Etiam porta sem malesuada magna
+									molliseuismod. Nullam quis risus eget urna mollis ornare vel eu leo. Etiam porta sem</p>
+								<p>Etiam porta sem malesuada magna mollis euismod. Nullam quis risus eget urna mollis ornare vel
+									eu leo. Etiam porta sem
+								</p>
+								<a class="showcase__item__link" href="#">Read more</a>
+							</div>
+						</div>
+						<div class="showcase-news__item">
+							<div class="showcase__item-box">
+								<p><span>Vestibulum id ligula porta felis euismod</span> semper. Etiam porta sem malesuada magna
+									molliseuismod. Nullam quis risus eget urna mollis ornare vel eu leo. Etiam porta sem</p>
+								<p>Etiam porta sem malesuada magna mollis euismod. Nullam quis risus eget urna mollis ornare vel
+									eu leo. Etiam porta sem
+								</p>
+								<a class="showcase__item__link" href="#">Read more</a>
+							</div>
+						</div>
+						<div class="showcase-news__item">
+							<div class="showcase__item-box">
+								<p><span>Vestibulum id ligula porta felis euismod</span> semper. Etiam porta sem malesuada
+									magna
+									molliseuismod. Nullam quis risus eget urna mollis ornare vel eu leo. Etiam porta sem</p>
+								<p>Etiam porta sem malesuada magna mollis euismod. Nullam quis risus eget urna mollis ornare
+									vel
+									eu leo. Etiam porta sem
+								</p>
+								<a class="showcase__item__link" href="#">Read more</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="people">
+		<div class="container">
+			<div class="people-box">
+				<div class="people-border-left"></div>
+				<h2 class="people__title">What people say</h2>
+				<div class="people-border-right"></div>
+			</div>
+		</div>
+		<div class="people__slider">
+			<div class="container">
+				<div class="people__inner">
+					<div class="slider__items">
+						<div class="slider__item">
+							<div class="slider-box">
+								<div class="slider-text">
+									<span>Best app ever bro!</span>Etiam porta sem malesuada magna mollis euismod. Sed posuere
+									consectetur est at lobortis. Donec
+									ullamcorper nulla non metus auctor fringilla. Curabitur blandit tempus porttitor.
+								</div>
+							</div>
+							<div class="slider-photo">
+								<img src="img/icon/icon-1.png" alt="">
+								<span>Adam Donnovan</span>
 
-	<script src="main.js"></script>
+							</div>
+						</div>
+						<div class="slider__item">
+							<div class="slider-box">
+								<div class="slider-text">
+									<span>I love you!</span> Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Donec
+									id elit non mi porta gravida at eget
+									metus. Donec ullamcorper nulla non metus auctor.
+								</div>
+							</div>
+							<div class="slider-photo">
+								<img src="img/icon/icon-2.png" alt="">
+								<span>Adam Donnovan</span>
+
+							</div>
+						</div>
+						<div class="slider__item">
+							<div class="slider-box">
+								<div class="slider-text">
+									<span>Excellent app!</span> Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+									Donec id elit non mi porta gravida at eget
+									metus. Donec. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Donec id.
+								</div>
+							</div>
+							<div class="slider-photo">
+								<img src="img/icon/icon-3.png" alt="">
+								<span>Adam Donnovan</span>
+
+							</div>
+						</div>
+						<div class="slider__item">
+							<div class="slider-box">
+								<div class="slider-text">
+									<span>Thanks for download!</span> Etiam porta sem malesuada magna mollis euismod. Sed posuere
+									consectetur est at lobortis. Donec
+									ullamcorper nulla non metus auctor fringilla. Curabitur blandit tempus.
+								</div>
+							</div>
+							<div class="slider-photo">
+								<img src="img/icon/icon-4.png" alt="">
+								<span>Adam Donnovan</span>
+
+							</div>
+						</div>
+						<div class="slider__item">
+							<div class="slider-box">
+								<div class="slider-text">
+									<span>Best app ever bro!</span>Etiam porta sem malesuada magna mollis euismod. Sed posuere
+									consectetur est at lobortis. Donec
+									ullamcorper nulla non metus auctor fringilla. Curabitur blandit tempus porttitor.
+								</div>
+								<div class="slider-photo">
+									<img src="img/icon/icon-1.png" alt="">
+									<span>Adam Donnovan</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer-border"></div>
+			<div class="footer__inner">
+				<p><span>Copyright (c) 2013 Summer freebie template </span> | Creative Common Licence (c) Allowed for
+					commercial use and modifications |
+					Created by Jakub Spitzer</p>
+				<div class="footer__social">
+					<a class="footer__social__link" href="#">
+						<img src="img/social-footer/twitter.png" alt="">
+					</a>
+					<a class="footer__social__link" href="#">
+						<img src="img/social-footer/linkedin.png" alt="">
+					</a>
+					<a class="footer__social__link" href="#">
+						<img src="img/social-footer/skype.png" alt="">
+					</a>
+					<a class="footer__social__link" href="#">
+						<img src="img/social-footer/facebook.png" alt="">
+					</a>
+					<a class="footer__social__link" href="#">
+						<img src="img/social-footer/dribbble.png" alt="">
+					</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- Подключаем jQuery -->
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<!-- Подключаем слайдер Slick -->
+	<script src="js/slick.min.js"></script>
+	<!-- Подключаем файл скриптов -->
+	<script src="js/script.js"></script>
+	<script src="js/main.js"></script>
 </body>
 
 </html>
