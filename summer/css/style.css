@@ -631,6 +631,10 @@ body {
   padding-top: 20px;
 }
 
+.slick-active {
+  margin-left: 5px;
+}
+
 .slider-box {
   width: 237px;
   height: 138px;
@@ -712,12 +716,12 @@ body {
 }
 
 .slider__items .slick-arrow.slick-prev {
-  left: -30px;
+  left: -40px;
   background: url("../img/slider/arrow_left.png") 0 0/100% no-repeat;
 }
 
 .slider__items .slick-arrow.slick-next {
-  right: -30px;
+  right: -40px;
   background: url("../img/slider/arrow_right.png") 0 0/100% no-repeat;
 }
 
@@ -726,7 +730,7 @@ body {
 }
 
 .slider__items {
-  padding: 0 20px;
+  padding: 0 5px;
 }
 
 /* --- Modal ---  */
@@ -1079,9 +1083,6 @@ body {
 }
 
 @media screen and (max-width: 383px) {
-  .showcase-news__item {
-    margin-bottom: 160px;
-  }
   .showcase__item__link {
     top: 250px;
     right: 25px;
@@ -1101,5 +1102,14 @@ body {
   }
   .summerapp-btn + .summerapp-btn {
     margin-top: 10px;
+  }
+  .showcase__item__link {
+    top: 290px;
+    right: 25px;
+  }
+  .showcase-news__item {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 40px;
   }
 }
